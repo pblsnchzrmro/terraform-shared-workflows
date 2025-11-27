@@ -2,6 +2,16 @@
 
 Shared reusable GitHub workflows for Terraform projects.
 
+## Prerequisites
+
+To use these workflows in your repository, you need to enable external workflows:
+
+1. Go to your repository **Settings** → **Actions** → **General**
+2. Under **Actions permissions**, select:
+   - ✅ **Allow pblsnchzrmro actions and reusable workflows**
+
+Without this setting, the workflows won't be able to run.
+
 ## Available Workflows
 
 ### 1. Security Scan
