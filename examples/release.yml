@@ -1,0 +1,15 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.tf'
+      - '**/*.tpl'
+      - '**/*.py'
+
+jobs:
+  release:
+    name: Semantic Release
+    uses: pblsnchzrmro/terraform-shared-workflows/.github/workflows/release.yml@main

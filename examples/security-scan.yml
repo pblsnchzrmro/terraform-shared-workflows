@@ -1,0 +1,11 @@
+name: Security Scan
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  security:
+    name: KICS Security Scan
+    uses: pblsnchzrmro/terraform-shared-workflows/.github/workflows/security-scan.yml@main

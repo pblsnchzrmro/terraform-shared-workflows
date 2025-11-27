@@ -1,0 +1,14 @@
+name: Pre-Commit
+
+on:
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  pre-commit:
+    name: Terraform Validation
+    uses: pblsnchzrmro/terraform-shared-workflows/.github/workflows/pre-commit.yml@main
